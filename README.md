@@ -51,7 +51,7 @@ Extracted URLs are stored in a JSON file (product_data.json):
 - Go 1.21+
 2. Clone the Repository
 ```sh
-git clone https://github.com/yourusername/WebCrawler.git
+git clone https://github.com/Vineet0197/WebCrawler.git
 cd WebCrawler
 ```
 3. Build and Run with Docker
