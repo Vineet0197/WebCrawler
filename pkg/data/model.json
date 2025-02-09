@@ -1,0 +1,9 @@
+{
+    "patterns": [
+      "/product/",
+      "/item/",
+      "/products/",
+      "/shop/",
+      "/deal-of-the-day/"
+    ]
+}

@@ -1,0 +1,11 @@
+log-level: INFO
+
+server:
+  port: 8108
+
+kafka:
+  brokers:
+    - "kafka:9092"
+  topic: "web-crawler"
+  group-id: "shoppin-web-crawler"
+  auto-offset-reset: "earliest"
