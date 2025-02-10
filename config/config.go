@@ -25,10 +25,12 @@ type Config struct {
 		DB       int    `mapstructure:"db"`
 	} `mapstructure:"redis"`
 	Kafka struct {
-		Brokers []string `mapstructure:"brokers"`
-		Topic   string   `mapstructure:"topic"`
-		GroupID string   `mapstructure:"group-id"`
-		Offset  string   `mapstructure:"auto-offset-reset"`
+		Brokers  []string `mapstructure:"brokers"`
+		Topic    string   `mapstructure:"topic"`
+		GroupID  string   `mapstructure:"group-id"`
+		Offset   string   `mapstructure:"auto-offset-reset"`
+		Username string   `mapstructure:"username"`
+		Password string   `mapstructure:"password"`
 	} `mapstructure:"kafka"`
 }
 

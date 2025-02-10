@@ -32,7 +32,9 @@ func main() {
 	}
 
 	// Initialize the Kafka storage
-	ks, err := services.NewKafkaStorage(config.GetConfig().Kafka.Brokers, config.GetConfig().Kafka.Topic, config.GetConfig().Kafka.GroupID)
+	kafka_Username := config.GetConfig().Kafka.Username
+	kafka_Pass := config.GetConfig().Kafka.Password
+	ks, err := services.NewKafkaStorage(config.GetConfig().Kafka.Brokers, config.GetConfig().Kafka.Topic, config.GetConfig().Kafka.GroupID, kafka_Username, kafka_Pass)
 	if err != nil {
 		panic(err)
 	}
